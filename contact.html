@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sonoray Medical Systems | Contact</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header>
+    <h2>Sonoray Medical Systems</h2>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Products & Services</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html" class="active">Contact</a>
+    </nav>
+</header>
+
+<section class="section">
+    <h2>Contact Us</h2>
+
+    <div class="contact-flex">
+
+        <!-- CONTACT DETAILS -->
+        <div class="contact-info">
+
+            <h3>Reach Us</h3>
+
+            <p><b>Company:</b> Sonoray Medical Systems</p>
+
+            <!-- CLICKABLE ADDRESS -->
+            <p><b>Address:</b><br>
+            <a class="map-link"
+            href="https://www.google.com/maps/dir/?api=1&destination=13.038043375243088,80.188564803361"
+            target="_blank">
+            Sri Dhurghalaya Apartments, 55, Thiruvalluvar Salai,<br>
+            Om Sakthi Nagar, KK Nagar West,<br>
+            Nesapakkam, Chennai, Tamil Nadu – 600087
+            </a></p>
+
+            <p><b>Email:</b> sonoraymedicalsystems@gmail.com</p>
+            <p><b>Phone:</b> +91 99400 10520</p>
+
+            <br>
+
+            <!-- PDF DOWNLOAD -->
+            <a class="catalog-btn" href="catalog.pdf" download>
+            Download Product Catalog (PDF)
+            </a>
+
+            <br><br>
+
+            <!-- WHATSAPP -->
+            <a class="whatsapp-btn" 
+            href="https://wa.me/919940010520?text=Hello%20Sonoray%20Medical%20Systems"
+            target="_blank">
+            Chat on WhatsApp
+            </a>
+
+        </div>
+
+        <!-- ENQUIRY FORM -->
+        <div class="contact-form">
+
+            <form id="contactForm">
+
+                <label>Your Name:</label>
+                <input type="text" id="name" required />
+
+                <label>Email:</label>
+                <input type="email" id="email" required />
+
+                <label>Phone:</label>
+                <input type="text" id="phone" required />
+
+                <label>Message:</label>
+                <textarea id="message" required></textarea>
+
+                <button type="submit" class="form-btn">Send Message</button>
+
+            </form>
+
+            <p id="formMsg" style="margin-top:10px; color:green;"></p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- MAP WITH CLICKABLE NAVIGATION + MARKER -->
+<section class="section">
+    <h2>Find Us on Map</h2>
+
+    <a href="https://www.google.com/maps/dir/?api=1&destination=13.038043375243088,80.188564803361"
+       target="_blank"
+       class="map-wrap">
+
+        <iframe
+            width="100%"
+            height="350"
+            style="border:0; pointer-events:none;"
+            loading="lazy"
+            allowfullscreen
+            referrerpolicy="no-referrer-when-downgrade"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1553.1537808048084!2d80.188564803361!3d13.038043375243088!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1734937200000">
+        </iframe>
+
+        <!-- MARKER ICON -->
+        <img src="https://maps.gstatic.com/mapfiles/api-3/images/spotlight-poi2_hdpi.png"
+             style="width:32px; height:32px; position:absolute; top:50%; left:50%; transform:translate(-50%, -100%);">
+
+        <div class="map-overlay-text">Tap to Open Google Maps</div>
+
+    </a>
+
+</section>
+
+<footer>
+    <p>© 2025 Sonoray Medical Systems | All Rights Reserved</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

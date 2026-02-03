@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sonoray Medical Systems | Products & Services</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header>
+    <h2>Sonoray Medical Systems</h2>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html" class="active">Products & Services</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<section class="section">
+    <h2>Products & Services</h2>
+
+    <!-- Buttons Next to Each Other -->
+    <div class="division-select">
+        <button class="div-btn" onclick="showDivision('human')">Human Division</button>
+        <button class="div-btn" onclick="showDivision('vet')">Veterinary Division</button>
+    </div>
+
+    <!-- Human Division Content (Hidden Initially) -->
+    <div id="human" class="division-content">
+        <h3>Products (Human)</h3>
+
+<ul class="product-list">
+    <li onclick="openSpec('products/human/portable-x1.pdf')">
+        Portable Ultrasound X1
+    </li>
+
+    <li onclick="openSpec('products/human/doppler-z5.jpg')">
+        Colour Doppler Z5
+    </li>
+</ul>
+        <h3>Services (Human)</h3>
+        <ul>
+            <li>Installation & setup across India</li>
+            <li>Machine repair & calibration</li>
+            <li>Preventive maintenance & AMC</li>
+            <li>Probe repair solutions</li>
+            <li>Clinical training & applications support</li>
+        </ul>
+    </div>
+
+    <!-- Veterinary Division Content (Hidden Initially) -->
+    <div id="vet" class="division-content">
+        <h3>Products (Veterinary)</h3>
+
+<ul class="product-list">
+    <li onclick="openSpec('products/veterinary/vet-scan-pro.pdf')">
+        Vet Scan Pro
+    </li>
+</ul>
+        <h3>Services (Veterinary)</h3>
+        <ul>
+            <li>Vet ultrasound installation & demo</li>
+            <li>AMC & maintenance support</li>
+            <li>Probe & cable repair</li>
+            <li>On-field vet service support</li>
+            <li>Vet equipment guidance</li>
+        </ul>
+    </div>
+
+</section>
+
+<footer>
+    <p>© 2025 Sonoray Medical Systems | All Rights Reserved</p>
+</footer>
+
+<script src="script.js"></script>
+<!-- PRODUCT SPEC POPUP -->
+<div id="specModal" class="spec-modal">
+    <div class="spec-content">
+        <span class="close-btn" onclick="closeSpec()">×</span>
+        <iframe id="specFrame"></iframe>
+    </div>
+</div>
+
+</body>
+</html>
